@@ -1,0 +1,38 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "lisa is a girl",
+      "author": "trump"
+    },
+    {
+      "title": "change content",
+      "authod": "lee",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "title": "climb hill",
+      "author": "trump"
+    },
+    {
+      "id": "4",
+      "title": "i found a secret",
+      "author": "xiaoming"
+    },
+    {
+      "title": "change content",
+      "id": "CbxQlg_"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "she is a student",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "nope"
+  }
+}

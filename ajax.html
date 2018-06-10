@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+    $(() => {
+            //1.请求posts接口下的所有数据
+            $.ajax({
+                url: 'http://localhost:9090/posts',
+                dataType: 'json',
+                type: 'get',
+                success: (data) => {
+                    console.log(data)
+                },
+                error: (err) => {
+                    console.log(err)
+                }
+            })
+            //2.请求posts接口下指定id
+//            $.ajax({
+//                url: 'http://localhost:9090/posts?id=2',
+//                dataType: 'json',
+//                type: 'get',
+//                success: (data) => {
+//                    console.log(data)
+//                },
+//                error: (err) => {
+//                    console.log(err)
+//                }
+//            })
+
+
+            //3.向posts接口下添加数据
+//            $.ajax({
+//                url: 'http://localhost:9090/posts',
+//                dataType: 'json',
+//                type: 'post',
+//                data: {
+//                    "id": 4,
+//                    "title": "i found a secret",
+//                    "author": "xiaoming"
+//                },
+//                success: (data) => {
+//                    console.log(data)
+//                },
+//                error: (err) => {
+//                    console.log(err)
+//                }
+//            })
+            //4.向posts接口下修改数据put方式
+//            $.ajax({
+//                url: 'http://localhost:9090/posts/2',//注意这里是2，而不是?id=2
+//                dataType: 'json',
+//                type: 'put',
+//                data: {
+//
+//                    "title": "change content",
+//                    "authod":"lee"
+//                },
+//                success: (data) => {
+//                    console.log(data)
+//                },
+//                error: (err) => {
+//                    console.log(err)
+//                }
+//            })
+           // 5. 条件查询，以view排序,需要单独开启news的服务
+           //使用mockjs生成的数据 json-server mockData/news.js
+//            $.ajax({
+//                url: 'http://localhost:3000/news?_sort=views',
+//                dataType: 'json',
+//                type: 'get',
+//                success: (data) => {
+//                    console.log(data)
+//                },
+//                error: (err) => {
+//                    console.log(err)
+//                }
+//            })
+        }
+    )
+</script>
+</body>
+
+</html>
