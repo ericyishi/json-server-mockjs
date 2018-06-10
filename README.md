@@ -17,6 +17,15 @@
    ```
     npm install mockjs --save
    ```
-
+### 启动服务
+1. 找到需要作为接口的json数据
+   ```
+    json-server --watch test.json
+   ```
+2. 也可以启动多个文件，但是注意一个接口只能启动一个服务
+   ```
+    json-server --watch mockData/news.js --port 9090
+   ```
+   * 更多用法，参看笔记：https://github.com/ericyishi/summary/blob/master/frontEnd/nodejs/tools/json-server.md
 ### 遗留问题
 1. 使用post请求新增数据的时候，会将id数值转化为字符串。应该是json-server服务器这边的问题，待解决。
